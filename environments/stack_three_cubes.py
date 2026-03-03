@@ -301,8 +301,8 @@ class StackThreeCubes(ManipulationEnv):
             self.placement_initializer = UniformRandomSampler(
                 name="ObjectSampler",
                 mujoco_objects=[self.red_cube, self.green_cube, self.blue_cube],
-                x_range=[-0.3, 0.3],
-                y_range=[-0.3, 0.3],
+                x_range=[-0.2, 0.2],
+                y_range=[-0.2, 0.2],
                 rotation=None,          # random yaw, same as Lift
                 ensure_object_boundary_in_range=False,
                 ensure_valid_placement=True,
