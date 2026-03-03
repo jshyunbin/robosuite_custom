@@ -40,7 +40,7 @@ def collect_human_trajectory(env, device, arm, max_fr, goal_update_mode):
     env.reset()
     env.render()
 
-    task_completion_hold_count = -1  # counter to collect 10 timesteps after reaching goal
+    task_completion_hold_count = -1  # counter to collect 30 timesteps after reaching goal
     device.start_control()
 
     for robot in env.robots:
@@ -106,7 +106,7 @@ def collect_human_trajectory(env, device, arm, max_fr, goal_update_mode):
             if task_completion_hold_count > 0:
                 task_completion_hold_count -= 1  # latched state, decrement count
             else:
-                task_completion_hold_count = 10  # reset count on first success timestep
+                task_completion_hold_count = 30  # reset count on first success timestep
         else:
             task_completion_hold_count = -1  # null the counter if there's no success
 
