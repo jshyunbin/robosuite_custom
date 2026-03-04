@@ -28,6 +28,12 @@ Tested on MacbookPro M5 Tahoe 26.3
 
 ## List of Environments
 
+### StackThreeCubes
+A environment similar to the robosuite's `Lift` preset but with two more cubes in different colors. 
+
+This environment's goal is to move each cube so that the green cube is stacked above the red cube and the blue cube is stacked above the green cube. This environment is challenging due to the need to understand the current state and decide which cube to pick up. 
+
+The reward will only be triggered when all three cubes are stacked in the right orientation. Therefore it is not only important to stack all three cubes stable but also stack them in the right order. 
 
 ## Helpful Scripts
 
