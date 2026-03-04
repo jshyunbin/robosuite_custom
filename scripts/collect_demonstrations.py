@@ -16,7 +16,7 @@ sys.path.append('.')
 
 import h5py
 import numpy as np
-from environments.stack_three_cubes import StackThreeCubes
+import environments
 
 import robosuite as suite
 from robosuite.controllers import load_composite_controller_config
@@ -302,7 +302,8 @@ if __name__ == "__main__":
 
     if controller_config["type"] == "WHOLE_BODY_MINK_IK":
         # mink-speicific import. requires installing mink
-        from robosuite.examples.third_party_controller.mink_controller import WholeBodyMinkIK
+        # from robosuite.examples.third_party_controller.mink_controller import WholeBodyMinkIK
+        pass
 
     # if WHOLE BODY IK; assert only one robot
     if controller_config["type"] == "WHOLE_BODY_IK":

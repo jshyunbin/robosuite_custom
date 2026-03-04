@@ -18,11 +18,12 @@ import json
 import os
 import random
 import sys
+
 sys.path.append('.')
 
 import h5py
 import numpy as np
-from environments.stack_three_cubes import StackThreeCubes
+import environments
 
 import robosuite
 
