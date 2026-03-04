@@ -48,6 +48,7 @@ Example usage:
         --done_mode 1 --dense --camera_names agentview robot0_eye_in_hand --camera_height 84 --camera_width 84
 """
 import os
+import logging
 import json
 import h5py
 import argparse
@@ -57,6 +58,9 @@ from tqdm import tqdm
 import sys
 
 sys.path.append('.')
+
+from robosuite.utils.log_utils import ROBOSUITE_DEFAULT_LOGGER
+ROBOSUITE_DEFAULT_LOGGER.setLevel(logging.ERROR)
 
 
 import environments
