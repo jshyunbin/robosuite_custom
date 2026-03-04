@@ -1,1 +1,1 @@
-from stack_three_cubes import StackThreeCubes
+from .stack_three_cubes import StackThreeCubes
