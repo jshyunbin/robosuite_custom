@@ -16,7 +16,7 @@ sys.path.append('.')
 
 import h5py
 import numpy as np
-import robothink.envs
+import environments
 
 import robosuite as suite
 from robosuite.controllers import load_composite_controller_config

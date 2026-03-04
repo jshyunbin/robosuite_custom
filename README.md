@@ -7,7 +7,7 @@ Custom robosuite environments for data collection
 
 You can easily collect datasets with custom environments by using the below command
 ```zsh
-uv run mjpython robothink/scripts/collect_demonstrations.py --directory data/ --environment StackThreeCubes --device spacemouse
+uv run mjpython scripts/collect_demonstrations.py --directory data/ --environment StackThreeCubes --device spacemouse
 ```
 > ⚠️ `mjpython` is specifically for mac. For Linux and others replace `mjpython` with `python`
 
